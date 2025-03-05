@@ -15,7 +15,7 @@ def main(host_name, host_port):
     client.connect((nombre_host, puerto_host));
 
     #Enviamos una coleccion de bytes.
-    client.send(b"GET / HTTP/1.1\r\nHost: google.com\r\n\r\n");
+    client.send(b"Hola desde el cliente");
 
     #Recivimos una respuesta por medio del metodo recv al cual le pasamos
     #el numero de bits que tendra el buffer (4096)
